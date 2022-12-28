@@ -1,0 +1,37 @@
+GET http://localhost:3000/bank/greet
+###
+POST http://localhost:3000/bank/login
+content-type: application/json
+
+{"username": "john", "password": "changeme"}
+###
+POST http://localhost:3000/bank/login
+content-type: application/json
+
+{"username": "ravindra", "password": "patel"}
+
+###
+GET http://localhost:3000/auth
+###
+
+POST  http://localhost:3000/profiletoken
+content-type: application/json
+
+{"username": "ravindra", "password": "patel"}
+###
+
+
+
+
+GET http://localhost:3000/profile
+//{"username": "ravindra", "password": "patel"}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imxha3NobWkiLCJlbWFpbCI6Imxha3NobWlAY3RzLmNvbSIsInJvbGVzIjpbImFkbWluIiwibWFuYWdlciIsInVzZXIiXSwiaWF0IjoxNjcxNDI4NDE3LCJleHAiOjE2NzE1MTQ4MTd9.7HQh-V2yZPnFSeaI7n6sR_tvTwSv9PCiyyaQ6U_1D-M
+###
+POST http://localhost:3000/bank/change_password
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmluZHJhIiwiaWF0IjoxNjcxOTgyMzQ5LCJleHAiOjE2NzI0MTQzNDl9.i905KErsUWfuRfID9G7Wxli339kyMd4BFYVxScweTWc
+
+###
+POST http://localhost:3000/bank/register
+content-type: application/json
+
+{"username": "ravindra","email":"ravindra@gmail.com", "password": "patel"}
