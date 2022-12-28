@@ -23,7 +23,7 @@ import { Ticket } from './users/ticket.entity';
     host: 'localhost',
     port: 3306,
     username: 'root',
-    password: 'HareKrishna@108',
+    password: 'pass@word1',
     database: 'flightbookapp',
     entities: [User,Airline,Flight,Ticket],
     autoLoadEntities:true,
